@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nuestra boda</title>
+  <meta name="description" content="Nos casamos. Aquí encontrarás toda la información de nuestra boda.">
+  <style>
+    :root {
+      --fondo: #f8f5ef;
+      --verde: #53634c;
+      --texto: #393a32;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      background: var(--fondo);
+      color: var(--texto);
+      font-family: Georgia, serif;
+      text-align: center;
+      line-height: 1.7;
+    }
+    header {
+      padding: 75px 20px 65px;
+      border-bottom: 1px solid #dcd8cc;
+    }
+    .eyebrow {
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      font: 11px Arial, sans-serif;
+      color: var(--verde);
+    }
+    h1 { font-size: clamp(38px, 8vw, 68px); font-weight: 400; }
+    h2 { font-size: 29px; font-weight: 400; }
+    section { padding: 42px 20px; }
+    .date { font-size: 19px; letter-spacing: 2px; }
+    .button {
+      display: inline-block;
+      padding: 12px 25px;
+      background: var(--verde);
+      color: white;
+      text-decoration: none;
+      margin-top: 12px;
+    }
+    .details { max-width: 560px; margin: auto; }
+    footer { padding: 25px; font-size: 13px; color: var(--verde); }
+  </style>
+</head>
+<body>
+  <header>
+    <p class="eyebrow">¡Nos casamos!</p>
+    <h1>Vuestros nombres</h1>
+    <p class="date">DÍA · MES · AÑO</p>
+    <p>Nos encantará compartir este día contigo.</p>
+    <a class="button" href="#confirmacion">Confirmar asistencia</a>
+  </header>
+
+  <section>
+    <p class="eyebrow">La celebración</p>
+    <h2>Un día para recordar</h2>
+    <div class="details">
+      <p> CEREMONIA · HORA </p>
+      <p>Nombre y dirección del lugar de la ceremonia.</p>
+      <p>CELEBRACIÓN · HORA</p>
+      <p>Nombre y dirección del lugar del banquete.</p>
+    </div>
+  </section>
+
+  <section>
+    <p class="eyebrow">Cómo llegar</p>
+    <h2>Transporte y alojamiento</h2>
+    <div class="details">
+      <p>Añadiremos aquí los horarios de los autobuses y los hoteles recomendados.</p>
+      <p><a href="https://maps.google.com/" target="_blank" rel="noopener">Consultar mapa</a></p>
+    </div>
+  </section>
+
+  <section id="confirmacion">
+    <p class="eyebrow">Tu respuesta</p>
+    <h2>¿Nos acompañas?</h2>
+    <p>Confirma tu asistencia a través de este enlace.</p>
+    <!-- Sustituye el enlace de ejemplo por el de tu formulario -->
+    <a class="button" href="https://forms.office.com/" target="_blank" rel="noopener">
+      Responder invitación
+    </a>
+  </section>
+
+  <section>
+    <p class="eyebrow">Con cariño</p>
+    <h2>Lista de regalos</h2>
+    <p>Próximamente compartiremos los detalles.</p>
+  </section>
+
+  <footer>
+    Hecho con cariño · Nuestra boda
+  </footer>
+</body>
+</html>
