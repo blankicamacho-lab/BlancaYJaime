@@ -144,3 +144,35 @@
     letter-spacing: 0;
   }
 }
+/* DIAPOSITIVA TRANSPORTE */
+
+.transporte-acuarela {
+  width: 100%;
+  box-sizing: border-box;
+  background: var(--cream);
+  padding: 45px 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-transporte {
+  display: block;
+  width: 100%;
+  max-width: 1150px;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* ADAPTACIÓN A MÓVIL */
+
+@media (max-width: 650px) {
+  .transporte-acuarela {
+    padding: 25px 8px;
+  }
+
+  .imagen-transporte {
+    width: 100%;
+    height: auto;
+  }
+}
