@@ -1,0 +1,8 @@
+WEB DE BODA - INSTRUCCIONES
+1. Sube index.html, style.css y script.js a la raíz del repositorio GitHub.
+2. Crea carpeta imagenes y sube portada.jpg, historia.jpg y bodega.jpg.
+3. En Settings > Pages elige Deploy from a branch, main y / (root).
+4. En index.html cambia los nombres, fecha, horarios y textos provisionales.
+5. En script.js escribe la fecha de la boda en fechaBoda, por ejemplo "2027-06-12T13:00:00".
+6. Antes de habilitar RSVP usa un formulario externo seguro; nunca guardes respuestas privadas en el repositorio público.
+NOTA: Las imágenes no vienen incluidas. Usa fotografías propias o con autorización.
