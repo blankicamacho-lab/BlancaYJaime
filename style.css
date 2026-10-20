@@ -73,3 +73,74 @@
     transform: translateY(-30%);
   }
 }
+/* NUEVA CUENTA ATRÁS */
+
+.cuenta-atras {
+  background: var(--cream);
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.cuenta-atras .cuenta-titulo,
+.cuenta-atras .cuenta-final {
+  font-family: Georgia, serif;
+  font-size: clamp(26px, 4vw, 42px);
+  font-weight: normal;
+  letter-spacing: 3px;
+  color: #687257;
+  margin: 0;
+}
+
+.cuenta-atras .contador {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  max-width: 620px;
+  margin: 45px auto;
+}
+
+.cuenta-atras .contador div {
+  flex: 1;
+  min-width: 0;
+  padding: 22px 12px;
+  border: 1px solid #c7c8b8;
+  border-radius: 6px;
+}
+
+.cuenta-atras .contador strong {
+  display: block;
+  font-size: 44px;
+  font-weight: normal;
+  color: #687257;
+}
+
+.cuenta-atras .contador span {
+  display: block;
+  margin-top: 8px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #687257;
+}
+
+@media (max-width: 600px) {
+  .cuenta-atras {
+    padding: 70px 12px;
+  }
+
+  .cuenta-atras .contador {
+    gap: 7px;
+  }
+
+  .cuenta-atras .contador div {
+    padding: 16px 3px;
+  }
+
+  .cuenta-atras .contador strong {
+    font-size: clamp(22px, 7vw, 34px);
+  }
+
+  .cuenta-atras .contador span {
+    font-size: 8px;
+    letter-spacing: 0;
+  }
+}
