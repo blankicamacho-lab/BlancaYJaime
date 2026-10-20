@@ -1,25 +1,5 @@
 :root{--cream:#f6f2e9;--ivory:#eee9de;--eucalyptus:#899583;--olive:#626d4f;--dark:#343f33;--ink:#514c43}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'Montserrat',sans-serif;font-size:14px;line-height:1.85}h1,h2,h3{font-family:'Cormorant Garamond',serif;font-weight:400;color:var(--dark);line-height:1.05}h1{font-size:clamp(54px,8vw,116px);margin:20px 0}h1 span{font-style:italic}h2{font-size:clamp(40px,5vw,66px);margin:14px 0 24px}h3{font-size:29px;margin:10px 0}.eyebrow{font-size:10px;letter-spacing:.35em;font-weight:600;color:var(--olive)}.nav{height:78px;padding:0 6%;display:flex;align-items:center;justify-content:space-between;background:var(--cream);gap:25px}.monogram{font-family:'Cormorant Garamond',serif;font-size:30px;color:var(--dark);text-decoration:none;white-space:nowrap}.nav nav{display:flex;gap:25px;flex-wrap:wrap}.nav nav a{font-size:9px;letter-spacing:.17em;text-transform:uppercase;text-decoration:none;color:var(--dark)}.nav a:hover{text-decoration:underline}.hero{min-height:610px;display:grid;place-items:center;text-align:center;background:linear-gradient(90deg,rgba(246,242,233,.82),rgba(246,242,233,.22)),url('imagenes/portada.jpg') center/cover}.hero-overlay{padding:60px 20px}.hero-date{letter-spacing:.28em;font-size:11px;line-height:2.4}.line{width:45px;height:1px;background:var(--olive);margin:20px auto}.section{padding:100px max(6%,calc((100vw - 1250px)/2))}.intro{display:grid;grid-template-columns:1fr 1fr;gap:8%;align-items:center;position:relative}.intro>div:nth-child(2){max-width:480px}.botanical{position:absolute;left:1%;top:20px;font-size:140px;color:var(--eucalyptus);opacity:.35;pointer-events:none}.photo{min-height:350px;background:var(--ivory) center/cover no-repeat}.intro-photo{background-image:url('imagenes/historia.jpg')}.countdown{text-align:center;background:#d9ddcf;padding:45px 20px}.timer{display:flex;justify-content:center;gap:clamp(15px,6vw,80px);margin-top:20px;flex-wrap:wrap}.timer div{min-width:80px}.timer strong{display:block;font:400 55px 'Cormorant Garamond',serif;color:var(--dark);line-height:1}.timer span{font-size:10px;letter-spacing:.2em;text-transform:uppercase}.day{text-align:center}.schedule{display:grid;grid-template-columns:repeat(4,1fr);gap:25px;margin-top:55px}.schedule article{padding:10px}.schedule p{font-size:12px}.symbol{font-size:42px;color:var(--olive)}.venue{display:grid;grid-template-columns:1fr 1fr;background:var(--ivory)}.venue-photo{background-image:url('imagenes/bodega.jpg');min-height:450px}.venue-text{padding:90px 12%;align-self:center}.btn{display:inline-block;background:var(--olive);color:white;text-decoration:none;letter-spacing:.18em;font-size:10px;padding:14px 24px;margin-top:20px}.btn:hover{background:var(--dark)}.stay{text-align:center;max-width:800px;margin:auto}.rsvp{text-align:center;background:var(--olive);color:white;padding:90px 20px}.rsvp h2,.rsvp .eyebrow{color:white}.rsvp .small{font-size:11px;opacity:.85;margin-top:30px}footer{padding:35px 6%;display:flex;justify-content:space-between;gap:15px;align-items:center;font-size:10px;letter-spacing:.2em}footer span:first-child{font:30px 'Cormorant Garamond',serif}@media(max-width:750px){.nav{height:auto;padding:20px;flex-direction:column}.nav nav{justify-content:center;gap:12px 18px}.nav nav a{font-size:8px}.hero{min-height:490px}.section{padding:70px 7%}.intro,.venue{grid-template-columns:1fr}.intro-photo{min-height:280px}.schedule{grid-template-columns:1fr 1fr;gap:20px}.venue-text{padding:60px 7%}.venue-photo{min-height:300px}footer{flex-direction:column;text-align:center}}
-/* El gran día: diseño en acuarela */
 
-.dia-acuarela {
-  background-color: #F6F2E9;
-  padding: 35px 15px;
-  text-align: center;
-}
-
-.imagen-dia {
-  display: block;
-  width: 100%;
-  max-width: 1200px;
-  height: auto;
-  margin: 0 auto;
-}
-
-@media (max-width: 600px) {
-  .dia-acuarela {
-    padding: 25px 5px;
-  }
-}
 /* DISEÑO DEFINITIVO: EL GRAN DÍA */
 
 .dia-acuarela {
