@@ -20,3 +20,76 @@
     padding: 25px 5px;
   }
 }
+/* DISEÑO DEFINITIVO: EL GRAN DÍA */
+
+.dia-acuarela {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 45px 24px;
+  margin: 0 auto;
+  background: #F6F2E9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.imagen-con-enlaces {
+  position: relative;
+  width: 100%;
+  max-width: 1150px;
+  margin: 0 auto;
+}
+
+.imagen-con-enlaces .imagen-dia {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* BOTONES DE GOOGLE MAPS */
+
+.enlace-iglesia,
+.enlace-bodega {
+  position: absolute;
+  display: block;
+  top: 89.1%;
+  height: 6.7%;
+  width: 24%;
+  z-index: 5;
+  cursor: pointer;
+}
+
+.enlace-iglesia {
+  left: 10.6%;
+}
+
+.enlace-bodega {
+  left: 65.1%;
+}
+
+/* ADAPTACIÓN A MÓVIL */
+
+@media (max-width: 650px) {
+
+  .dia-acuarela {
+    padding: 25px 8px;
+  }
+
+  .imagen-con-enlaces {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .imagen-con-enlaces .imagen-dia {
+    width: 100%;
+    height: auto;
+  }
+
+  .enlace-iglesia,
+  .enlace-bodega {
+    min-height: 24px;
+    transform: translateY(-30%);
+  }
+}
