@@ -176,28 +176,92 @@
     height: auto;
   }
 }
-<!-- PORTADA BLANCA Y JAIME -->
+/* PORTADA - FOTO IZQUIERDA Y TEXTO DERECHA */
 
-<section class="hero" id="inicio">
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 45%) minmax(0, 55%);
+  width: 100%;
+  min-height: 620px;
+  background: var(--cream);
+  align-items: center;
+  overflow: hidden;
+  text-align: center;
+}
 
-  <div class="hero-foto">
-    <img
-      src="./foto-portada.jpg"
-      alt="Blanca y Jaime juntos junto al mar"
-    >
-  </div>
+.hero-foto {
+  position: relative;
+  width: 100%;
+  height: 550px;
+  min-height: 0;
+  overflow: hidden;
+}
 
-  <div class="hero-overlay">
-    <p class="eyebrow">NOS CASAMOS!!!</p>
+.hero-foto img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+}
 
-    <h1>Blanca <span>&</span> Jaime</h1>
+.hero-foto::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to right,
+    transparent 75%,
+    var(--cream) 100%
+  );
+  pointer-events: none;
+}
 
-    <div class="line"></div>
+.hero-overlay {
+  grid-column: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 0;
+  padding: 40px 20px;
+}
 
-    <p class="hero-date">
-      22 DE MAYO DE 2027<br>
-      JEREZ DE LA FRONTERA
-    </p>
-  </div>
+.hero-overlay h1 {
+  font-size: clamp(48px, 5vw, 95px);
+  white-space: nowrap;
+}
 
-</section>
+/* MÓVIL */
+
+@media (max-width: 750px) {
+  .hero {
+    grid-template-columns: minmax(0, 1fr);
+    min-height: auto;
+  }
+
+  .hero-foto {
+    height: 420px;
+  }
+
+  .hero-foto::after {
+    background: linear-gradient(
+      to bottom,
+      transparent 70%,
+      var(--cream) 100%
+    );
+  }
+
+  .hero-overlay {
+    grid-column: 1;
+    padding: 25px 15px 70px;
+  }
+
+  .hero-overlay h1 {
+    font-size: clamp(44px, 10vw, 70px);
+    white-space: normal;
+  }
+}
+
