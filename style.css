@@ -571,3 +571,121 @@
     margin-top: 30px;
   }
 }
+/* ALOJAMIENTO: AJUSTES ESPECÍFICOS PARA MÓVIL */
+
+@media (max-width: 700px) {
+
+  .alojamiento-acuarela {
+    padding: 65px 18px 50px;
+    overflow: hidden;
+  }
+
+  /* Decoraciones discretas en las esquinas */
+  .alojamiento-acuarela .adorno-rama {
+    width: 95px;
+    top: 0;
+    left: -8px;
+    opacity: 0.35;
+  }
+
+  .alojamiento-acuarela .adorno-jerez {
+    width: 110px;
+    top: 0;
+    right: -12px;
+    opacity: 0.30;
+  }
+
+  /* Título y texto centrados, sin interferencias */
+  .alojamiento-acuarela > .eyebrow {
+    margin-top: 25px;
+    font-size: 9px;
+    letter-spacing: 0.22em;
+  }
+
+  .alojamiento-acuarela > h2 {
+    font-size: clamp(38px, 10vw, 48px);
+    line-height: 1.05;
+    margin: 12px 0 20px;
+    padding-bottom: 16px;
+  }
+
+  .alojamiento-acuarela > h2::before {
+    left: 30%;
+    width: 40%;
+  }
+
+  .alojamiento-acuarela .alojamiento-intro {
+    font-size: 12px;
+    line-height: 1.8;
+    margin: 0 auto 28px;
+    max-width: 100%;
+  }
+
+  /* Una tarjeta debajo de la otra */
+  .alojamiento-acuarela .hoteles-lista {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 22px;
+    margin-top: 22px;
+  }
+
+  .alojamiento-acuarela .hotel-card {
+    width: 100%;
+    min-width: 0;
+    box-sizing: border-box;
+    padding: 12px;
+  }
+
+  .alojamiento-acuarela .hotel-imagen {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1.8 / 1;
+    object-fit: cover;
+    margin-bottom: 14px;
+  }
+
+  .alojamiento-acuarela .hotel-card h3 {
+    font-size: 30px;
+    line-height: 1.1;
+    margin: 8px 0 18px;
+  }
+
+  /* Código legible y sin desbordamientos */
+  .alojamiento-acuarela .hotel-codigo {
+    width: 100%;
+    padding: 15px 8px;
+    gap: 9px;
+  }
+
+  .alojamiento-acuarela .hotel-codigo span {
+    font-size: 9px;
+    letter-spacing: 0.12em;
+    text-align: center;
+  }
+
+  .alojamiento-acuarela .hotel-codigo strong {
+    font-size: clamp(17px, 5vw, 23px);
+    overflow-wrap: anywhere;
+    text-align: center;
+  }
+
+  .alojamiento-acuarela .hotel-codigo button {
+    min-height: 36px;
+    padding: 8px 4px;
+  }
+
+  .alojamiento-acuarela .hotel-enlace {
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    padding: 15px 6px;
+    font-size: 9px;
+    letter-spacing: 0.08em;
+    margin-top: 14px;
+  }
+
+  .alojamiento-acuarela .alojamiento-pendiente {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-top: 28px;
+  }
+}
