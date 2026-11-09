@@ -1211,3 +1211,201 @@
     font-size: 25px;
   }
 }
+/* =========================================
+   REGALOS - BLANCA & JAIME
+   DISEÑO ELEGANTE Y MINIMALISTA
+   ========================================= */
+
+.regalo-section {
+  background: #F6F2E9 !important;
+  padding: 75px 20px 85px !important;
+  margin: 0 !important;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+/* TEXTO ORIGINAL */
+
+.regalo-section .regalo-intro {
+  max-width: 720px !important;
+  margin: 0 auto 38px !important;
+  padding: 0 10px;
+  color: #626D4F !important;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 13px !important;
+  font-weight: 400 !important;
+  line-height: 1.9 !important;
+  letter-spacing: 0.01em !important;
+}
+
+/* TARJETA GIRATORIA */
+
+.tarjeta-regalo {
+  width: min(350px, 88vw) !important;
+  height: 190px !important;
+  margin: 0 auto !important;
+  perspective: 1200px;
+}
+
+.tarjeta-regalo-interior {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.85s ease;
+}
+
+.tarjeta-regalo.volteada .tarjeta-regalo-interior {
+  transform: rotateY(180deg);
+}
+
+.tarjeta-cara {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* CARA DELANTERA */
+
+.tarjeta-delantera {
+  background: #E9E9DC !important;
+  border: 1px solid #899583 !important;
+  color: #626D4F !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 10px !important;
+  font-weight: 500 !important;
+  letter-spacing: 0.20em !important;
+  padding: 15px;
+  transition: background 0.3s ease;
+}
+
+.tarjeta-delantera:hover {
+  background: #DDE0D2 !important;
+}
+
+/* CARA TRASERA */
+
+.tarjeta-trasera {
+  transform: rotateY(180deg);
+  background: #626D4F !important;
+  color: #F6F2E9 !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+
+.tarjeta-trasera .regalo-etiqueta {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 8px !important;
+  letter-spacing: 0.22em;
+  color: #E9E9DC !important;
+  margin: 0 0 4px;
+}
+
+.tarjeta-trasera h3 {
+  font-family: 'Cormorant Garamond', serif !important;
+  font-size: 27px !important;
+  font-weight: 400 !important;
+  color: #F6F2E9 !important;
+  margin: 0 0 4px;
+}
+
+.tarjeta-trasera .titulares {
+  font-family: 'Montserrat', sans-serif !important;
+  font-size: 9px !important;
+  line-height: 1.7;
+  color: #F6F2E9 !important;
+  margin: 0 0 8px;
+}
+
+.iban-contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.iban-contenedor span {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  color: #E9E9DC;
+}
+
+.iban-contenedor strong {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  color: #FFFFFF;
+  letter-spacing: 0.02em;
+}
+
+/* COPIAR IBAN */
+
+.copiar-iban {
+  margin-top: 9px;
+  padding: 7px 18px;
+  background: #F6F2E9 !important;
+  color: #343F33 !important;
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  letter-spacing: 0.15em;
+  cursor: pointer;
+}
+
+.copiar-iban:hover {
+  background: #DDE0D2 !important;
+}
+
+.mensaje-copiado {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  min-height: 11px;
+  margin: 3px 0 0;
+  color: #F6F2E9;
+}
+
+.volver-regalo {
+  background: transparent;
+  border: none;
+  color: #F6F2E9;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  margin-top: 2px;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* MÓVILES */
+
+@media (max-width: 600px) {
+  .regalo-section {
+    padding: 55px 18px 65px !important;
+  }
+
+  .regalo-section .regalo-intro {
+    font-size: 11px !important;
+    line-height: 1.8 !important;
+    margin-bottom: 30px !important;
+  }
+
+  .tarjeta-regalo {
+    width: min(330px, 90vw) !important;
+    height: 190px !important;
+  }
+
+  .iban-contenedor strong {
+    font-size: 10px;
+  }
+}
