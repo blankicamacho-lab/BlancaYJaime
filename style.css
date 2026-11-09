@@ -1017,3 +1017,197 @@
     font-size: 12px;
   }
 }
+/* =====================================
+   REGALOS - DISEÑO DEFINITIVO
+   ===================================== */
+
+.regalo-section {
+  display: block;
+  width: 100%;
+  margin: 0;
+  padding: 85px 20px 90px;
+  box-sizing: border-box;
+  background: var(--cream);
+  text-align: center;
+}
+
+/* TEXTO INTRODUCTORIO */
+
+.regalo-section .regalo-intro {
+  max-width: 720px;
+  margin: 0 auto 38px;
+  color: var(--olive);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.9;
+  letter-spacing: 0;
+}
+
+/* TARJETA */
+
+.tarjeta-regalo {
+  width: min(420px, 88vw);
+  height: 190px;
+  margin: 0 auto;
+  perspective: 1000px;
+}
+
+.tarjeta-regalo-interior {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s ease;
+}
+
+.tarjeta-regalo.volteada .tarjeta-regalo-interior {
+  transform: rotateY(180deg);
+}
+
+.tarjeta-cara {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* DELANTERA */
+
+.tarjeta-delantera {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--olive);
+  color: var(--cream);
+  border: none;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.23em;
+  padding: 15px;
+}
+
+.tarjeta-delantera:hover {
+  background: var(--dark);
+}
+
+/* TRASERA */
+
+.tarjeta-trasera {
+  transform: rotateY(180deg);
+  background: var(--olive);
+  color: var(--cream);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 12px;
+}
+
+.tarjeta-trasera .regalo-etiqueta {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  letter-spacing: 0.22em;
+  margin: 0 0 3px;
+  color: var(--ivory);
+}
+
+.tarjeta-trasera h3 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 27px;
+  font-weight: 400;
+  color: var(--cream);
+  margin: 0 0 3px;
+}
+
+.tarjeta-trasera .titulares {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 10px;
+  line-height: 1.6;
+  margin: 0 0 7px;
+}
+
+.iban-contenedor {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.iban-contenedor span {
+  font-size: 8px;
+  letter-spacing: 0.2em;
+  color: var(--ivory);
+}
+
+.iban-contenedor strong {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+}
+
+/* BOTONES */
+
+.copiar-iban {
+  margin-top: 8px;
+  padding: 7px 18px;
+  background: var(--cream);
+  color: var(--dark);
+  border: none;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  cursor: pointer;
+}
+
+.mensaje-copiado {
+  font-size: 9px;
+  min-height: 12px;
+  margin: 2px 0 0;
+}
+
+.volver-regalo {
+  background: transparent;
+  border: none;
+  color: var(--cream);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 8px;
+  letter-spacing: 0.12em;
+  text-decoration: underline;
+  margin-top: 2px;
+  cursor: pointer;
+}
+
+/* MÓVIL */
+
+@media (max-width: 600px) {
+
+  .regalo-section {
+    padding: 65px 20px 70px;
+  }
+
+  .regalo-section .regalo-intro {
+    font-size: 12px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+
+  .tarjeta-regalo {
+    width: min(370px, 90vw);
+    height: 205px;
+  }
+
+  .tarjeta-delantera {
+    font-size: 9px;
+    letter-spacing: 0.16em;
+  }
+
+  .tarjeta-trasera h3 {
+    font-size: 25px;
+  }
+}
