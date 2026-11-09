@@ -24,3 +24,42 @@ function actualizarCuentaAtras() {
 
 actualizarCuentaAtras();
 setInterval(actualizarCuentaAtras, 1000);
+/* =====================================
+   TARJETA INTERACTIVA DE REGALO
+   ===================================== */
+
+document.addEventListener('DOMContentLoaded', function () {
+
+  const tarjeta = document.getElementById('tarjetaRegalo');
+  const abrirRegalo = document.getElementById('abrirRegalo');
+  const volverRegalo = document.getElementById('volverRegalo');
+  const copiarIban = document.getElementById('copiarIban');
+  const mensajeCopiado = document.getElementById('mensajeCopiado');
+
+  if (!tarjeta) return;
+
+  abrirRegalo.addEventListener('click', function () {
+    tarjeta.classList.add('volteada');
+  });
+
+  volverRegalo.addEventListener('click', function () {
+    tarjeta.classList.remove('volteada');
+    mensajeCopiado.textContent = '';
+  });
+
+  copiarIban.addEventListener('click', async function () {
+
+    const iban = 'ES2300812719290020526071';
+
+    try {
+      await navigator.clipboard.writeText(iban);
+      mensajeCopiado.textContent = '¡IBAN COPIADO! ✓';
+
+    } catch (error) {
+      mensajeCopiado.textContent =
+        'No se ha podido copiar automáticamente: ' + iban;
+    }
+
+  });
+
+});
