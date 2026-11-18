@@ -1447,3 +1447,38 @@
   background-color: #53664e;
   color: #ffffff;
 }
+/* TRANSPORTE: BOTÓN DEBAJO DE LA IMAGEN */
+
+#transporte {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  width: 100%;
+}
+
+#transporte .imagen-transporte {
+  display: block;
+  width: 100%;
+  max-width: 1200px;
+  height: auto;
+}
+
+#transporte .enlaces-transporte {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  margin: 20px auto 40px !important;
+  padding: 0 !important;
+}
+
+#transporte .boton-transporte {
+  display: inline-block;
+  background-color: #e9ede4;
+  color: #53664e;
+  border: 1px solid #cbd3c3;
+  border-radius: 4px;
+  padding: 13px 28px;
+  text-decoration: none;
+  font-size: 14px;
+}
