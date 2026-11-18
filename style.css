@@ -1419,3 +1419,26 @@
   text-align: center;
   margin: 25px auto 0;
 }
+.enlaces-transporte {
+  display: flex;
+  justify-content: center;
+  padding: 10px 15px 45px;
+}
+
+.boton-transporte {
+  display: inline-block;
+  padding: 13px 30px;
+  background: #e9ede4;
+  color: #53664e;
+  border: 1px solid #cbd3c3;
+  border-radius: 30px;
+  text-decoration: none;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+}
+
+.boton-transporte:hover {
+  background: #53664e;
+  color: #fff;
+}
