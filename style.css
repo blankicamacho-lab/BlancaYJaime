@@ -1422,23 +1422,28 @@
 .enlaces-transporte {
   display: flex;
   justify-content: center;
-  padding: 10px 15px 45px;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0 40px;
+  box-sizing: border-box;
 }
 
 .boton-transporte {
   display: inline-block;
-  padding: 13px 30px;
-  background: #e9ede4;
+  padding: 13px 28px;
+  background-color: #e9ede4;
   color: #53664e;
   border: 1px solid #cbd3c3;
-  border-radius: 30px;
+  border-radius: 4px;
   text-decoration: none;
+  font-family: inherit;
   font-size: 14px;
   letter-spacing: 0.5px;
+  text-align: center;
   transition: all 0.3s ease;
 }
 
 .boton-transporte:hover {
-  background: #53664e;
-  color: #fff;
+  background-color: #53664e;
+  color: #ffffff;
 }
